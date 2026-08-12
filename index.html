@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability and Statistics Organizer</title>
+    <meta name="description" content="Organizador interactivo para el curso de Probabilidad y Estadística con seguimiento de progreso.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Probability & Statistics</h1>
+                <p>Organizador de Lecciones Interactivo</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-stats">
+                    <span id="progress-text">0 / 27 Completados</span>
+                    <span id="progress-percentage">0%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="lessons-grid" id="lessons-grid">
+                <!-- Lessons will be dynamically injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
